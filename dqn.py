@@ -126,7 +126,7 @@ poetry run pip install "stable_baselines3==2.0.0a1"
         wandb.init(
             project=args.wandb_project_name,
             entity=args.wandb_entity,
-            sync_tensorboard=False,
+            sync_tensorboard=True,
             config=vars(args),
             name=run_name,
             monitor_gym=True,
