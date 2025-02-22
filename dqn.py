@@ -107,7 +107,7 @@ def linear_schedule(start_e: float, end_e: float, duration: int, t: int):
     return max(slope * t + start_e, end_e)
 
 
-if __name__ == "__main__":
+def main():
     import stable_baselines3 as sb3
 
     if sb3.__version__ < "2.0":
@@ -249,3 +249,7 @@ poetry run pip install "stable_baselines3==2.0.0a1"
 
     envs.close()
     writer.close()
+
+
+if __name__ == "__main__":
+    main()
